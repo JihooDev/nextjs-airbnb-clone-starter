@@ -16,7 +16,7 @@ import { Type } from "class-transformer";
 import { IsOptional, ValidateNested } from "class-validator";
 import { UserWhereUniqueInput } from "../../user/base/UserWhereUniqueInput";
 import { JsonFilter } from "../../util/JsonFilter";
-import { FloatNullableFilter } from "../../util/FloatNullableFilter";
+import { FloatFilter } from "../../util/FloatFilter";
 import { TripListRelationFilter } from "../../trip/base/TripListRelationFilter";
 import { WishlistListRelationFilter } from "../../wishlist/base/WishlistListRelationFilter";
 
@@ -135,14 +135,14 @@ class ListingWhereInput {
 
   @ApiProperty({
     required: false,
-    type: FloatNullableFilter,
+    type: FloatFilter,
   })
-  @Type(() => FloatNullableFilter)
+  @Type(() => FloatFilter)
   @IsOptional()
-  @Field(() => FloatNullableFilter, {
+  @Field(() => FloatFilter, {
     nullable: true,
   })
-  price?: FloatNullableFilter;
+  price?: FloatFilter;
 
   @ApiProperty({
     required: false,

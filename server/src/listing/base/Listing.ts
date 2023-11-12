@@ -112,15 +112,12 @@ class Listing {
   placeType!: string;
 
   @ApiProperty({
-    required: false,
+    required: true,
     type: Number,
   })
   @IsNumber()
-  @IsOptional()
-  @Field(() => Number, {
-    nullable: true,
-  })
-  price!: number | null;
+  @Field(() => Number)
+  price!: number;
 
   @ApiProperty({
     required: true,
