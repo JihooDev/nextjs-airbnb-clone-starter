@@ -34,7 +34,7 @@ model Listing {
   placeAmeneties    Json
   placeSpace        Json
   placeType         String
-  price             Float?
+  price             Float
   title             String
   trips             Trip[]
   updatedAt         DateTime   @updatedAt

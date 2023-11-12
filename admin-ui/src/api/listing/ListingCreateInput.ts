@@ -13,7 +13,7 @@ export type ListingCreateInput = {
   placeAmeneties: InputJsonValue;
   placeSpace: InputJsonValue;
   placeType: string;
-  price?: number | null;
+  price: number;
   title: string;
   trips?: TripCreateNestedManyWithoutListingsInput;
   wishlists?: WishlistCreateNestedManyWithoutListingsInput;

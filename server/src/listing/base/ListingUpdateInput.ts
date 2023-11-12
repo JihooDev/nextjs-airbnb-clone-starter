@@ -131,7 +131,7 @@ class ListingUpdateInput {
   @Field(() => Number, {
     nullable: true,
   })
-  price?: number | null;
+  price?: number;
 
   @ApiProperty({
     required: false,

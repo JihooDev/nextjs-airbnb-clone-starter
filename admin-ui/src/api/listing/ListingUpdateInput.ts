@@ -13,7 +13,7 @@ export type ListingUpdateInput = {
   placeAmeneties?: InputJsonValue;
   placeSpace?: InputJsonValue;
   placeType?: string;
-  price?: number | null;
+  price?: number;
   title?: string;
   trips?: TripUpdateManyWithoutListingsInput;
   wishlists?: WishlistUpdateManyWithoutListingsInput;
